@@ -1,0 +1,21 @@
+# Build
+.build/
+DerivedData/
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+*.xcuserstate
+
+# macOS
+.DS_Store
+*.swp
+*~
+
+# App bundle output
+dist/
+*.dmg
+
+# Conversation export (large)
+conversation_export.md

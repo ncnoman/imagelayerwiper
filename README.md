@@ -19,16 +19,66 @@ A native macOS & iOS image comparison app built with SwiftUI. Drop in two images
 - **Export** — Save composites as PNG, JPEG, or TIFF at 1x/2x/3x scale
 - **Cross-Platform** — Runs on macOS 14+ and iOS 17+
 
-## Controls
+## Usage
+
+### Modes
+
+ImageLayerWiper has two modes:
+
+- 🔵 **View Mode** (default) — Navigate and zoom the canvas
+- 🔴 **Edit Mode** — Manipulate individual image layers
+
+Toggle between them by **right-clicking** anywhere on the canvas, or clicking the **Edit** button in the toolbar.
+
+### Mouse & Trackpad Controls
 
 | Action | View Mode | Edit Mode |
 |---|---|---|
-| **Scroll wheel (vertical)** | Zoom canvas | Scale active layer |
-| **Scroll wheel (horizontal)** | Active layer opacity | Rotate active layer |
-| **Right-click** | Toggle edit mode | Toggle edit mode |
-| **Click on image** | Select layer | Select layer |
-| **Drag** | Pan canvas | Move active layer |
-| **Pinch (trackpad)** | Zoom canvas | — |
+| **Click** on image | Select layer (Image 1 or 2) | Select layer |
+| **Drag** | Pan the entire canvas | Move the active layer |
+| **Scroll wheel ↕** (vertical) | Zoom canvas in/out | Scale the active layer |
+| **Scroll wheel ↔** (horizontal) | Adjust active layer opacity | Rotate the active layer |
+| **Right-click** | Toggle View ↔ Edit mode | Toggle View ↔ Edit mode |
+| **Pinch** (trackpad) | Zoom canvas | — |
+| **Rotate** (two-finger twist) | — | Rotate active layer |
+
+### Keyboard Shortcuts
+
+| Shortcut | Action |
+|---|---|
+| `⌘Z` | Undo |
+| `⌘⇧Z` | Redo |
+
+### Swiper Pill & Divider Line
+
+Drag the **pill** at the bottom of the canvas to control the wipe-reveal position. The vertical **divider line** follows the pill.
+
+> 💡 **Tip:** Customize the divider line's color and thickness by clicking the **▼** chevron next to the Line button in the toolbar.
+
+### Loading Images
+
+**Drag & drop** image files onto the canvas. Drop one image to load it into the active slot, or drop two images at once to load both. Use the **Swap** button to switch Image 1 and Image 2.
+
+### Toolbar
+
+| Button | Function |
+|---|---|
+| **Edit** | Toggle edit mode on/off |
+| **Line ▼** | Toggle divider line / open color & thickness settings |
+| **↩ ↪** | Undo / Redo |
+| **Swap** | Swap Image 1 ↔ Image 2 |
+| **Save** | Save current session |
+| **Export** | Export composite as PNG, JPEG, or TIFF |
+
+### Inspector Panels (Left & Right Sidebars)
+
+| Section | Controls |
+|---|---|
+| **Transform** | Scale, rotation, offset, flip, opacity |
+| **Adjustments** | Brightness, contrast, saturation, exposure, highlights, shadows, sharpness, blur, vibrance, temperature, hue |
+| **3D Perspective** | X/Y/Z rotation with adjustable depth |
+
+> 📄 A printable **[Quick Start Guide (PDF)](https://github.com/ncnoman/imagelayerwiper/releases/latest/download/ImageLayerWiper_QuickStart.pdf)** is also available in Releases.
 
 ## Install
 

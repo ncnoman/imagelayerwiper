@@ -64,6 +64,12 @@ Sources/
 
 MIT — free to use, modify, and distribute.
 
-## Support
+---
 
-If you find this useful, consider [sponsoring](https://github.com/sponsors/ncnoman) the project.
+## 💜 Support This Project
+
+If ImageLayerWiper is useful to you, consider supporting development:
+
+[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=github)](https://github.com/sponsors/ncnoman)
+
+Even a ⭐ on the repo helps! Thank you 🙏
